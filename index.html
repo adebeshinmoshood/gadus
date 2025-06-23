@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adebeshin moshood// Web Developer</title>
+  <style>
+     /* Toggle (open) button */
+    #openBtn {
+      position: fixed;
+      top: 27px;
+      color: white;
+      border: none;
+      
+      
+      font-size: 30px;
+      cursor: pointer;
+    
+    }
+
+    /* Sidebar container */
+    #sidebar {
+      position: fixed;
+      top: 50px; /* not from the very top */
+      right: 0;
+      width: 260px;
+      height: auto; /* just tall enough */
+      background-color: #e0e0e0; /* soft grey */
+      color: #333;
+      border-radius: 12px 0 0 12px;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      transform: translateX(110%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    #sidebar.active {
+      transform: translateX(0);
+    }
+    
+    #sidebar.active {
+      transform: translateX(0);
+    }
+
+    /* Close button inside the sidebar */
+    #closeBtn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Sidebar links */
+    .sidebar-link {
+      display: block;
+      margin-top: 40px;
+      padding: 12px 16px;
+      background-color: #ffffff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+      font-weight: 500;
+    }
+
+    .sidebar-link:hover {
+      background-color: #dcdcdc;
+    }
+  
+
+
+    .projects{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1230px;
+      height:1000px ;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px ;
+      justify-content: center;
+
+    }
+    .bbdd{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+    .container{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 10px;
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      background-color:rgba(240, 240, 240, 0.4);;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/body.jpg);
+      background-size: cover;
+      gap: 40px;
+    }
+  
+   
+
+    .profile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      height: 600px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 0px 0px 10px 10px;
+      justify-content: center;
+      margin-top: 105px;
+
+    }
+    .cc{
+      all: unset;
+      display: flex;
+      gap: 40px;
+      padding: 30px;
+    }
+    .z{
+      width: 30px;
+    }
+    .a{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border: 5px dotted black;
+      padding: 10px;
+
+    }
+    .b{
+      background:linear-gradient(to right, #eeeeee, #cccccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+     .bb{
+      background-color: green;
+      height: 40px;
+      width: 130px;
+      color: white;
+      border-radius: 10px;
+     }
+       .bbb li::marker{
+        color: green;
+        font-size: larger;
+        
+       } 
+       .info{
+        display: flex;
+      flex-direction: column;
+      width: 800px;
+      height: 450px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px;
+      justify-content: center;
+
+
+       }
+         .butt{
+           background-color: white;
+      box-shadow: 0 0 0px px white;
+      border-radius: 20px;
+      text-align: center;
+      width:840px ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+                     
+         }
+         .con{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-top: 105px;
+         }
+         .cdq{
+          display: flex;
+          align-items: center;
+          gap: 15vw;
+         }
+         .bbq{
+           display: flex;
+         }
+          .cac{
+            display: flex;
+            gap: 70px;
+            padding: 20px;
+            align-items: center;
+            
+          }
+          .dad{
+            display: flex;
+            gap: 70px;
+            padding: 20px;
+            align-items: center;
+          }
+         a{
+          all: unset;
+         }
+         .apc{
+          height: 40px;
+          width: 120px;
+          border-radius: 15px;
+          background-color: green;
+          color: white;
+          font-size: large;
+          font-weight: bolder;
+         }
+         .contain{
+          display: flex;
+          gap: 20px;
+         }
+         .container2{
+          display: flex;
+      flex-direction: column;
+      width: 1230px;
+      height: 450px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px;
+      justify-content: center;
+
+         }
+         .container2b{
+           display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1230px;
+      height: 750px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px;
+      justify-content: center;
+         }
+         .ga{
+          height: 300px;
+          width: 250px;
+          border-radius: 50px;
+            border: 1px solid black;
+
+         }
+         .pg{
+          width: 300px;
+          height: 300px;
+          border-radius: 20px 20px 0 0;
+         }
+         .ccd{
+          display: flex;
+          gap: 60px;
+        
+         }
+         .cdc{
+          height: 420px;
+          border: 0.5px solid;
+          border-radius: 20px;
+          text-align: center;
+         }
+         .bax{
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          align-items: center;
+         }
+        .contai{
+          
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      height: 250px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px;
+      justify-content: center;
+        }
+        .icon{
+          width: 50px;
+          height: 30px;
+        }
+        header{
+          position: fixed;
+          height: 100px;
+          top: 0;
+          background-color: white;
+        
+        }
+
+.containe {
+  
+      display: flex;
+    
+    align-items: center;
+      width: 1230px;
+      height: 450px;
+      background-color: white;
+      box-shadow: 0 10px 10px px white;
+      border-radius: 20px;
+      padding: 20px;
+      gap: 50px;
+      
+}
+
+.bac{
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+}
+.dac{
+  height: 450px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+
+}
+button{
+  background-color: green;
+  color: white;
+}
+.dd{
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+ .contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+ }
+ .la{
+  font-size: x-large;
+  font-weight: bolder;
+ }
+ 
+    .fol{
+      display: none;
+    }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden; /* prevents horizontal scroll */
+  font-family: Arial, sans-serif;
+}
+   @media  screen and (max-width:768px) {
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #openbtn{
+        position: fixed;
+        top: 0;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    h1{
+      font-size: 25px;
+    }
+      }
+      .fol{
+        display: block;
+        position: fixed;
+        top: 0;
+      }
+       .hak{
+        display: none;
+       }
+
+      .profile{
+        width: 400px;
+        padding: 20px;
+      }
+
+      .info{
+        width: 400px;
+        padding: 20px;
+        height: auto;
+      
+        
+        
+        
+      }
+      .con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: auto;
+        
+      }
+
+     .butt{
+      width: 400px;
+        height: auto;
+        padding: 20px;
+     }
+
+     .container2{
+      width: 400px;
+        padding: 20px;
+        height: auto;
+
+     }
+     .fol{
+      font-size: large;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top:0;
+
+     }
+
+   .bbdd{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+        
+        height: auto
+   }
+   .container2b{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    
+    ;
+   }
+      .cac{
+        display: flex;
+        flex-direction: column;
+
+      }  
+      .dad{
+        display: flex;
+        flex-direction: column;
+      }
+        .projects{
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          height: auto;
+          
+        }
+        .ccd{
+          display: flex;
+          flex-direction: column;
+        
+        }
+        .containe{
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          width: 400px;
+        
+        }
+        .bac{
+        
+          width: 400px;
+        }
+          .dac{
+            width: 400px;
+            
+          }
+          .dd{
+            width: 350px;
+         
+         }
+         .contai{
+      width: 400px;
+      padding: 20px;
+    }
+   header{
+    height: 100px;
+   }
+    
+      
+    }
+
+    
+    @media (max-width:1200px) and (min-width:769px) {
+    .cdq{
+      display: flex;
+      align-items: center;
+      gap: 5vw;
+    }
+  
+    .profile{
+      width: 350px;
+      height: 700px;
+      
+    }
+    .bbdd{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .info{
+      width: 600px;
+      height:500px;
+    }
+    .butt{
+      width: 600px;
+      padding: 20px;
+    }
+    .container2{
+      width: 950px;
+    }
+    .container2b{
+      width: 950px;
+    }
+    .projects{
+      width: 950px;
+    }
+    .bax{
+      display: flex;
+      gap: 20px;
+    }
+    .pg{
+      width: 250px;
+    }
+    .ccd{
+      display: flex;
+      gap: 20px;
+    }
+  
+  .bac{
+    width: 400px;
+  }
+.dac{
+  width: 400px;
+}
+.dd{
+  width: 300px;
+}
+.containe{
+  display: flex;
+  
+  height: auto;
+  width: 950px;
+  
+}
+.contai{
+  width: 950px;
+}}
+  </style>
+
+</head>
+<body>
+  <header class="cdq">
+    <h1>Adebeshin</h1>
+       <div class="hak" style="display: flex;justify-content: space-between;gap: 40px;font-size: 25px;">
+         <a class="hak" href="#home">home</a>
+             <a class="hak" href="#about">About</a>
+          <a class="hak" href="#projects">Projects</a>
+          <a class="hak" href="#contact">Contact</a>
+           <button id="openBtn" class="fol">☰ </button>
+
+  <div id="sidebar">
+    <button id="closeBtn" >×</button>
+    <a href="#home" class="sidebar-link">Home</a>
+    <a href="#about" class="sidebar-link">About</a>
+    <a href="#projects" class="sidebar-link">Project</a>
+    <a href="#contact" class="sidebar-link">Contact</a>
+  </div>
+       </div>
+       
+        
+      </nav>
+      <button class="apc">Hire Me</button>
+  </header>
+  <div class="bbdd">
+  <div class="container" >
+    <div class="profile">
+      <img class="a" src="images/moshoodpic copy.jpg" alt="">
+      <h1>Adebeshin Moshood</h1>
+      <p style="font-size: 20px;">i am a Web Developer based in Africa</p>
+
+       <button class="cc">
+      <a href="https://wa.me/2349013027778"><img src="images/icons8-whatsapp-50.png" alt="" class="z , aaaa"></a>
+
+      <a href="https://github.com/adebeshinmoshood"><img src="images/icons8-github-50.png" alt="" class="z , book"></a>
+      <a href="mailto:adebeshinmoshoo@gmail.com"><img src="images/icons8-mail-50.png" alt="" class="z , cccc"></a>
+      <a href="tel:2349013027778"><img src="images/icons8-call-50.png" alt="" class="z , cccc"></a>
+    </button>
+
+    </div>
+    <div class="con">
+      <div class="info">
+        <p class="c" style="font-weight: bolder;">Hello There</p>
+        <h1 style="font-size: 50px;">
+          <span class="" style="color: black;">I'M  </span>
+          <span class="b" style="color: black;">ADEBESHIN MOSHOOD  </span>
+          <span class="" style="color: black;">A WEB DEVELOPER  </span>
+          <span class="b" style="color: black;"> BUILDING MODERN,FAST</span>
+          <span class="" style="color: black;">& RESPONSIVE WEBSITES </span>
+        </h1>
+        <ul class="bbb" style="padding: 10px 10px 10px 10px;font-size: 15px;font-weight: bolder;">
+          <li>Available For Freelancing</li>
+        </ul>
+        <button class="bb" style="font-size: large;font-weight: bolder;">contact me</button>
+      </div>
+      <div class="butt"><h3>I design and develop modern, high-performance Websites that blend clean code with seamless user experiences, ensuring that every interaction feels intuitive, fast,and purpose-driven </h3></div>
+    </div>
+  </div>
+  <div class="contain">
+  <div class="container2">
+    <h1>Get To Know Me!</h1>
+      <p style="font-size: 25px;font-weight: bolder;">Hi, I'm a frontend web developer who loves creating clean, responsive, and interactive websites. I enjoy turning ideas into real, functional web pages using HTML, CSS, and JavaScript. My focus is always on building smooth user experiences and making sure everything works well on all screen sizes.
+
+I started learning web development because I was curious about how websites work, and that curiosity quickly turned into a passion. Now, I’m constantly improving my skills, exploring new technologies, and building projects that help me grow. Whether it’s a simple landing page or a full portfolio site, I enjoy the process of bringing a design to life through code.</p>
+
+<a href="#contact"> <button style="height: 30px;width: 90px;  background-color: green;border-radius: 5px; color: white;text-transform: capitalize;font-size: 15px;font-weight: bolder;">CONTACT</button></a>
+  </div>
+ 
+   </div>
+ <div class="container2b">
+  <div style="text-align: center;display: flex;flex-direction: column;">
+    <p style="margin-bottom: 1px;">Pro Skills</p>
+    <h1>Let's Explore my skills</h1>
+  </div>
+     <div class="cac">
+      
+      <img class="ga" src="images/a.jpg" alt="">
+      <img class="ga" src="images/a1.jpg" alt="">
+      <img class="ga" src="images/a2.jpg" alt="">
+     </div>
+     <div class="dad">
+      <img class="ga" src="images/a3.jpg" alt="">
+      <img class="ga" src="images/a4.jpg" alt="">
+      <img class="ga" src="images/a5.jpg" alt="">
+
+     </div>
+
+  </div>
+  <div class="projects">
+    <h1>Works $ Projects</h1>
+    <p>Showcasin my Web development projects and experiences .Explore my work to see how i bring ideas to life through code</p>
+    <div class="bax">
+    <div class="ccd">
+      <div class="cdc">
+      <img class="pg" src="images/exp.jpg" alt="">
+      <h1>Expense Tracker</h1>
+        </div>
+      <div class="cdc">
+      <img class="pg" src="images/qz.jpg" alt="">
+      <h1>Quiz Game</h1>
+      </div>
+      <div class="cdc">
+      <img class="pg" src="images/gitb.jpg" alt="">
+      <h1>Github Finder</h1>
+      </div>
+    </div>
+    <div class="ccd">
+      <div class="cdc">
+      <img class="pg" src="images/cur.jpg" alt="">
+      <h1>Currency converter</h1>
+      </div>
+      <div class="cdc">
+      <img class="pg" src="images/td.jpg" alt="">
+      <h1>Todo App</h1>
+        </div>
+        <div class="cdc">
+      <img class="pg" src="images/bs.jpg" alt="">
+      <h1>Bookmark Saver</h1>
+      </div>
+    </div>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+    <div class="containe">
+      <div class="bac">
+      <div class="contact-box">
+      <h1>contact</h1>
+      <h1>Get in Touch with Me!</h1>
+        <div class="contact-info">
+          <p class="la"><span class="icon">📍</span> <strong>Our Office:</strong><br>Lagos State</p>
+          <p class="la"><span class="icon">📞</span> <strong>Contact Number:</strong><br>+234 9013027778</p>
+          <p class="la"><span class="icon">📧</span> <strong>Email Us:</strong><br>adebeshinmoshood@gmail.com</p>
+        </div>
+      </div>
+        </div>
+        <div class="dac">
+
+        <form class="contact-form" action="https://formsubmit.co/adebeshinmoshood@gmail.com" method="post">
+            <input class="dd" type="text" placeholder="Steve Milner">
+            <input class="dd" type="email" placeholder="hello@websitename.com">
+          
+          <textarea class="dd" placeholder="Write Your message"></textarea>
+          <button class="dd" type="submit">Send Me Message ✉</button>
+        </form>
+      
+    
+    </div>
+  
+  </div>
+
+    <div class="contai">
+      <h2>
+        ARE YOU READY TO<br>
+        <span class="outline-text">KICKSTART YOUR PROJECT</span><br>
+        WITH A TOUCH OF MAGIC?
+      </h2>
+      <p>Reach out and let's make it happen 👨‍💻. I'm also available for full-time or part-time opportunities to push the boundaries of design and deliver exceptional work.</p>
+      <a href="wmailto:adebeshinnmoshood@gmail.com"><button class="talk-button" style="width: 100px;">Let's Talk ✳</button></a>
+    </div>
+</div>
+</body>
+
+  <script>
+      const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const sidebar = document.getElementById('sidebar');
+
+    openBtn.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  
+  </script>
+</html>
